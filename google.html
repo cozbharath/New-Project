@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+        .bike {
+            background-color: #6471ED;
+            padding: 10px;
+            text-align: center;
+            border-radius: 15px;
+            border: 2px solid #87D7E6;
+        }
+        .biker {
+            text-align: right;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .biker a{
+            text-decoration: none;
+            padding: 10px;
+            width: 100px;
+            background-color: #E8A009;
+            border-radius: 20px;
+            color: white;
+        }
+        .nav {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            width: 600px;
+            margin: 50px auto;
+        }
+        label {
+            display: block;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .nav input {
+            width: 500px;
+            height: 20px;
+            margin-left: 20px;
+        }
+        .btn-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #51C6E8;
+        }
+        .button {
+            border: none;
+            border-radius: 6px;
+            padding: 10px 25px;
+            cursor: pointer;
+            background-color: #6471ED;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="bike">
+        <h1>Rajugari Bike</h1>
+    </div>
+    <div>
+        <nav class="biker">
+            <a href="Home">Home</a>
+            <a href="./Menu.html">Menu</a>
+            <a href="#Cont">Contact</a>
+            <a href="#About">About Me</a>
+        </nav>
+    </div>
+    <div class="nav">
+        <form action="./text1.html">
+            <h1>Enter Booking Details</h1>
+            <label for="">Enter Name:</label>
+            <input type="text" class="name" id="name" placeholder="Full Name" required>
+            <label for="">Email:</label>
+            <input type="text" class="email" id="email" placeholder="EMail" required>
+            <label for="">Mobile Number:</label>
+            <input type="text" class="name" id="name" placeholder="Full Name">
+            <label for="">Date of Booking:</label>
+            <input type="date" class="dob" id="dob" max="01/01/2027" placeholder="Booking Date"><br><br>
+            <div class="btn-center">
+                <button class="button">Book</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

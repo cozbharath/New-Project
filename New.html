@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go To</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            width: 100%;
+            background-color: black;
+            display: flex;
+            position: relative;
+            margin-top: 20px;
+        }
+        .img img{
+            width: 30%;
+            object-fit: cover;
+            border-radius: 50px;
+            object-fit: cover;
+            
+        }   
+        .h1 {
+            margin-top: 20px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .nav {
+            background-color: brown;
+            text-align: center;
+            padding: 20px;
+            
+        }
+        a {
+            margin-top: 20px;
+            padding: 30px;
+            text-decoration: none;
+            color: white;
+        }
+        .img1 {
+            background-image: url(https://krc.iith.ac.in/assets/images/carousel/slide3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            display: flex; 
+            justify-content: center ;                    
+            align-items: center;           
+        }
+        .Home {
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.55 ); 
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .Home h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .Home p {
+            color: #f0f0f0;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .body {
+            background-image: url(https://img.freepik.com/premium-photo/book-stack-library-room-blurred-bookshelf-background_42691-514.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;                 
+            justify-content: flex-end;     
+            align-items: center;           
+            padding-right: 60px;
+        }
+        .next {
+            background-image: url(https://as1.ftcdn.net/v2/jpg/09/36/96/14/1000_F_936961401_CIhFqH05VzHSycoUIDBpknh8Of1AVzPp.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;                 
+            justify-content: flex-start;     
+            align-items: center;           
+            padding-left: 60px;
+        }
+        .para {
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.55); 
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .para h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .para p {
+            color: #f0f0f0;
+            line-height: 1.5;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="img">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.QVBY30VqTi-tlYt_BaoGqAHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        </div>
+        <div class="h1" style="color: white;">
+            <h1>Rest In Peace</h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Details</a>
+        <a href="">Contack</a>
+    </nav>
+    <section>
+        <div class="img1">
+            <div class="para">
+                <h1>About Us</h1>
+                <p>The library is a central hub of knowledge and learning that supports academic excellence and personal growth. 
+                    It provides a quiet, organized, and resource-rich environment where students, faculty, 
+                    and researchers can explore information, enhance their understanding, and develop strong reading habits.
+                </p>
+                <p>
+                    The library houses a wide collection of books, including textbooks, reference materials, journals, magazines, and digital resources across various disciplines. These resources are carefully categorized and regularly updated to ensure easy access to accurate and relevant information. 
+                    The library also promotes independent learning and research by offering study spaces and a supportive atmosphere.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="body">
+        <div class="Home">
+            <h1>Hello Welcome!</h1>
+            <p>
+                Library books are an essential resource that support learning, research, and personal development. <br>
+                A well-maintained library offers a wide collection of books across various disciplines, enabling students and faculty to access reliable and organized knowledge.   <br>
+                These books serve as a foundation for academic growth and encourage a habit of reading and continuous learning.
+            </p>
+            <p>
+                The library collection typically includes textbooks, reference books, journals, research papers, and general reading materials. Books are arranged systematically according to subjects, making it easier for users to locate and use them efficiently. 
+                Regular updates ensure that the library stays relevant with the latest academic and literary developments.
+            </p>
+        </div>
+    </div>
+    <div class="next">
+        <div class="para">
+            <h1>Knowledge About Reading Books</h1>
+            <p>
+                Reading books is one of the most effective ways to gain knowledge, improve thinking skills, 
+                and develop a deeper understanding of the world.  Books provide structured and reliable information that helps readers learn new concepts, explore different perspectives, and build a strong foundation of knowledge across various subjects.
+            </p>
+            <p>
+                A regular reading habit helps reduce stress, improve focus, and build discipline. Books serve as a constant source of inspiration, motivation, and guidance, helping individuals grow intellectually and emotionally. 
+                In a fast-paced digital world, reading books remains a powerful and timeless way to gain knowledge and achieve personal development.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <form action="">
+                <label for="">Name:</label>
+                <input type="text" placeholder="Enter Your Name" required>
+                <label for="">Email:</label>
+                <input type="text" placeholder="Enter Your Email" required>
+                <label for="">Mobile Number:</label>
+                <input type="text" placeholder="Enter Your Mobile Number" required>
+                <label for="">Msg</label>
+                <input type="text-area" placeholder="Write Something">
+                <button>Submit</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

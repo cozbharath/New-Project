@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        /* Center container */
+        .Outer {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Earth orbit around Sun */
+        .Earth {
+            width: 300px;
+            height: 300px;
+            border: 1px dashed rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            position: relative;
+
+            animation: earth-revolve 15s linear infinite;
+        }
+
+        /* Sun */
+        .Sun {
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, yellow, orange, red);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 30px orange;
+        }
+
+        /* Earth body */
+        .Moon {
+            width: 30px;
+            height: 30px;
+            background: radial-gradient(circle, #4facfe, #00f2fe);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 15px #00f2fe;
+        }
+
+        /* Moon orbit container */
+        .Moon::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 8px white;
+        }
+
+        /* Moon revolution */
+        .Moon {
+            animation: moon-revolve 5s linear infinite;
+        }
+
+        /* Animations */
+        @keyframes earth-revolve {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes moon-revolve {
+            from {
+                transform: rotate(0deg) translateX(-50%);
+            }
+            to {
+                transform: rotate(360deg) translateX(-50%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Outer">
+        <div class="Earth">
+            <div class="Moon"></div>
+            <div class="Sun"></div>
+        </div>
+    </div>
+</body>
+</html>

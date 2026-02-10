@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+           background-color: black;
+           color: white;
+        }
+        .nav {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .col {
+            display: flex;
+            gap: 20px;
+            padding: 20px 5px 20px 5px;
+        }
+        
+        .button {
+            text-decoration: none;
+            width: 200px;
+            text-align: center;
+            background-color: #001FE8;
+            color: white;
+            padding: 5px;
+        }
+        .button:hover {
+            background-color: #51C6E8;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <form action="text1.html">
+            <label for="name">Student Name:</label>
+            <input type="text" name="studentname" id="studentname" placeholder="Student_Name" required><br><br>
+            <label for="course">Course Name:</label>
+            <select name="course" id="course">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="#c">#C</option>
+                <option value="wed development">Web Development:</option>
+                <option value="sql">SQL</option>
+            </select><br><br>
+            <label for="trainer name">Trainer Name:</label>
+            <input type="text" class="trainer name" id="trainer name" placeholder="Trainer Name" required><br><br>
+            <label for="duration">Course Duration:</label>
+            <select name="duration" id="duration">
+                <option value="1mon">1 Month</option>
+                <option value="">2 Month</option>
+                <option value="">3 Month</option>
+            </select><br><br>
+            <div class="col">
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" >
+                Male</label>
+                <label for="Female">
+                    <input type="radio" id="male" name="gender" value="Female">
+                Female</label>
+            </div>
+            <label for="message">Suggestions / Feedback</label>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br><br>
+            <button type="submit" class="button">Submit </button>
+        </form>
+    </div>
+</body>
+</html>

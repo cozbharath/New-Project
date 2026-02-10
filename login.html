@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background-image: url(https://wallpapercave.com/wp/wp8989684.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+        
+        .form {
+            justify-content: center;
+            margin-top: 20%;
+            margin-left: 70%;
+            border-radius: 10px;
+        }
+        .card {
+            display: flex;
+            gap: 49px;
+        }
+        .card a {
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 55%;
+        }
+        .button {
+            width: 15%;
+            height: auto;
+            margin-left: 100px;
+            background-color: blue;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .button:hover {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <form class="form" method="get" action="./Application.html">
+            <h1>Login</h1>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="Email" required> <br><br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Password" required><br><br>
+        <div class="card">
+                <a href="">Forget Password</a>
+                <a href="">Mobile Number</a>
+        </div>
+            <div>
+                <button class="button">login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

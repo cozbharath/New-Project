@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feed back</title>
+    <style>
+        body {
+            width: auto;
+            height: auto;
+            background-image: linear-gradient(rgba(242, 118, 22, 0.5),rgba(242, 238, 235, 0.1),rgba(256, 42, 224,0.5));
+            background-repeat: no-repeat;
+        }
+     .col {
+            text-align: center;
+            padding-top: 300px;
+            padding-bottom: 300px;
+        }
+        .nav {
+            margin-left: 2px;
+            text-align: center;
+            padding: 2px 0 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="col">
+        <form  action="text1.html">
+            <label for="Product Type" class="nav">Product Type:</label>
+            <select id="productType" name="productType" required>
+                <option value="">-- Select Product Type --</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Tablets">Tablets</option>
+                <option value="Laptops">Laptops</option>
+                <option value="Smartphones">Smartphones</option>
+                <option value="Macbooks">Macbooks</option>
+            </select><br><br>
+            <label for="Product Name">Product Name:</label> 
+            <input type="text" placeholder="Product Name"><br><br>
+            <label for="Product Name" class="nav">Model:</label> 
+            <input type="text" placeholder="Product Name"><br><br>
+            <label for="Product Type">Varient-Type:</label>
+            <select id="Varient-Type" name="Varient-Type" required>
+                <option value="">-- Select Varient-Type --</option>
+                <option value="Accessories">64gb</option>
+                <option value="Tablets">128gb</option>
+                <option value="Laptops">256gb</option>
+            </select><br><br>
+            <label for="I-Rating">I-Rating:</label>
+            <select id="Number" name="number" required>
+                <option value="">-- Select Rating --</option>
+                <option value="rating">5</option>
+                <option value="rating">4</option>
+                <option value="rating">3</option>
+                <option value="rating">2</option>
+                <option value="rating">1</option>
+            </select><br><br>
+
+            <label for="Comments">Comments:</label>
+            <input type="text" name="Comments" placeholder="Comments"><br><br>
+
+            <button type="submit" >Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
